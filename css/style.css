@@ -1,0 +1,672 @@
+/*
+Theme Name: 
+Author: 
+Version: 1.0.0
+
+
+Table of Content
+===================================================
+
+    1. Common Css
+    2. Nav Section
+    3. Banner Section
+*/
+/* Common CSS Start */
+h1,h2,h3,h4,h5,h6,
+p,
+ul,ol,
+span,
+small{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a,a:hover{
+    text-decoration: none;
+}
+/*//Common CSS End*/
+/*Heading Section CSS Start*/
+.heading_section_media{
+    height: 42px;
+    background-color: #ffca36;
+}
+.heading_section_social_media a i{
+    padding-left: 13px;
+    transition: all linear 0.5s;
+    color: #353535;
+    padding-top: 13px;
+    font-size: 14px;
+}
+.heading_section_social_media a:hover i{
+    color: #fff;
+}
+.heading_section_address{
+    height: 42px;
+    background-color: #ffca36;
+}
+.heading_section_address p{
+    font-size: 14px;
+    text-align: end;
+    padding-top: 13px; 
+    padding-right: 13px;
+    color: #353535;
+}
+.heading_section_entry{
+    height: 42px;
+    background-color: #353535;
+}
+.heading_section_entry p{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    padding-top: 13px;
+}
+/*//Heading Section CSS End*/
+
+
+/*Nav Section CSS Start*/
+
+#nav{
+   background-color: #000;
+   position: sticky;
+   top: 0;
+   z-index: 99;
+}
+
+.brand img{
+    padding-left: 92px;
+}
+
+#main_menu ul li{
+    margin-left: -4px;
+    
+}
+#main_menu ul li a{
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    transition: all linear 0.5s;
+    font-size: 16px;
+   padding: 19px;
+}
+#main_menu ul li:hover a{
+    color: #ffca36;
+}
+/*//Nav Section CSS End*/
+/*Banner Section CSS Start*/
+.banner_slider_item{
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+    height: 700px;
+}
+
+.banner_slider_item::before{
+    position: absolute;
+    background-color: rgba(49, 53, 56, 0.70);
+    inset: 0;
+    content: '';
+    z-index: -1;
+}
+.banner_slick_arrow {
+    top: 286px;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-50%);
+    font-size: 33px;
+    cursor: pointer;
+    color: #353535;
+    padding: 13px;
+    background-color: #ffca36;
+}
+.banner_slick_arrow.fa-chevron-left{
+    left: 40px;
+    transition: all linear 0.7s;
+    transform: translateX(-50%);
+}
+.banner_slick_arrow:hover.fa-chevron-left{
+    color: #fff;
+}
+.banner_slick_arrow.fa-chevron-right{
+    transition: all linear 0.7s;
+    right: 14px;
+transform: translateX(-14%);
+}
+.banner_slick_arrow:hover.fa-chevron-right{
+    color: #fff;
+}
+.banner_slider_dots{
+    left: 50%;
+    display: flex;
+    position: absolute;
+    top: 593px;
+    flex-wrap: wrap;
+    font-size: 0;
+    transform: translateX(-50%);
+}
+.banner_slider_dots li{
+    line-height: 0;
+}
+.banner_slider_dots li button{
+    height: 20px;
+    margin: 5px;
+    width: 19px;
+    border-radius: 50%;
+   background: none;
+    border: 1px solid orange;
+}
+.banner_slider_dots li.slick-active button{
+    background-color: orange;
+    border: none;
+}
+.banner_slider_item_content{
+    margin-top: 229px;
+}
+.banner_slider_item_headings h3{
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+.banner_slider_item_headings span{
+    color: #ffca36;
+}
+.banner_slider_item_paragraph{
+    margin-top: 20px;
+}
+.banner_slider_item_paragraph p{
+    color: #fff;
+    font-size: 14px;
+    width: 584px;
+}
+.purchase_button{
+    margin-left: 13px;
+}
+.banner_slider_button{
+    margin-top: 62px;
+}
+.button_banner_slider a{
+    color: #fff;
+    transition: all linear 0.5s;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    padding: 13px;
+}
+.button_banner_slider:hover a{
+    border: none;
+    background-color: #ffca36;
+}
+/*//Banner Section CSS End*/
+/*Services Section CSS Start*/
+#services{
+    margin-top: 52px
+}
+.services_sections_parts{
+    margin-top: 52px;
+}
+.services_sections_starts{
+    margin: 24px;
+    border: 2px groove #eee;
+    height: 393px;
+    width: 378px;
+    border-radius: 13px;
+}
+.services_sections_starts_image{
+    margin-top: 19px;
+}
+.services_sections_starts_image_headings{
+    margin-top: 13px;
+}
+.services_sections_starts_image_headings h5{
+    color: #353535;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.services_sections_starts_image_paragraph{
+    margin-top: 25px;
+}
+.services_sections_starts_image_paragraph p{
+    width: 284px;
+    margin: auto;
+    font-size: 14px;
+    color: #555555;
+}
+.services_sections_starts_image_icons_connect{
+    margin-top: 99px;
+}
+.services_sections_starts_image_icons_connect a{
+    font-size: 16px;
+    transition: all linear 0.5s;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: orange;
+    border-radius: 8px;
+    padding: 13px;
+
+}
+/*//Services Section CSS End*/
+/*About Section CSS Start*/
+#about{
+    margin-top: 52px;
+}
+.about_image_section{
+    margin-top: 148px;
+}
+.about_image_section img{
+    width: 692px;
+}
+.about_written_section{
+    margin-top: 148px;
+}
+.about_written_section_heading h2{
+    font-family: light;
+    font-weight: lighter;
+    font-size: 35px;
+    color: #353535;
+}
+.about_written_section_paragraph{
+    margin-top: 42px;
+}
+.about_written_section_paragraph p{
+    font-size: 14px;
+    color: #8b8b8b;
+    width: 584px;
+}
+.about_written_paragraph_section{
+    margin-top: 29px;
+}
+.about_written_paragraph_section p{
+    font-size: 14px;
+    color: #8b8b8b;
+    width: 584px;
+}
+.about_written_section_reading_More{
+    margin-top: 52px;
+}
+.about_written_section_reading_More a{
+    font-size: 16px;
+    transition: all linear 0.5s;
+    text-transform: uppercase;
+    color: #353535;
+    background-color: #ffca36;
+    padding: 13px;
+}
+.about_written_section_reading_More:hover a{
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+/*//About Section CSS End*/
+/*PortFoLio Section CSS Start*/
+#portfolio{
+    margin-top: 52px;
+}
+.portfolio_content{
+    margin-top: 148px;
+}
+.portfolio_heading h2{
+    font-weight: lighter;
+    font-size: 35px;
+    font-family: light;
+    color: #353535;
+}
+.portfolio_paragraph{
+    margin-top: 25px;
+}
+.portfolio_paragraph p{
+    margin: auto;
+    width: 507px;
+    color: #acacac;
+    font-size: 16px;
+}
+
+.portfolio_sections_parts{
+    margin-top: 42px;
+}
+.portfolio_image_sections{
+    position: relative;
+    cursor: pointer;
+}
+.portfolio_image_sections_overlay{
+    left: 0;
+    background-color: rgba(221, 176, 62, 0.70);
+    transition: all linear 0.5s;
+    position: absolute;
+    top: 0px;
+    visibility: hidden;
+    bottom: 0;
+    right: 54px;
+    opacity: 0;
+}
+.portfolio_image_sections:hover .portfolio_image_sections_overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.portfolio_image_sections_overlay_content{
+    margin-top: 162px;
+}
+.portfolio_image_sections_overlay_headings h5{
+    color: #353535;
+    font-size: 18px;
+}
+.portfolio_image_sections_overlay_paragraph p{
+    font-size: 14px;
+    color: #353535;
+}
+.portfolio_counter_section_part{
+    height: 200px;
+    position: relative;
+    background-image: url(../image/portfolio-banner.png);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    margin-top: 42px;
+}
+.portfolio_counter_section_part::before{
+     background-color: rgba(27, 25, 24, 0.70);
+     position: absolute;
+     inset: 0;
+     content: '';
+     z-index: -1;
+}
+.count_profession_section_content {
+    margin-top: 52px;
+}
+.count_section_headings h4{
+    color: #fff;
+    font-size: 35px;
+}
+.count_profession_paragraph p{
+    color: #fff;
+    font-size: 18px;
+}
+/*//PortFoLio Section CSS End*/
+/*BLog Section CSS Start*/
+/*
+#blog{
+    margin-top: 52px;
+}
+.blog_sections_parts{
+    margin-top: 72px;
+}
+.industry_blog_section{Margin: 30px;
+    height: 582px;
+    border: 1px solid #ddd;
+    width: 370px;
+}
+.industry_blog_image_headings{
+    margin: 42px;
+}
+.industry_blog_image_section{
+    position: relative;
+}
+.industry_blog_image_section_overlay{
+    right: -2px;
+    left: 0;
+    bottom: 0;
+    transition: all linear 0.8s;
+    position: absolute;
+    background-color: rgba(94, 94, 93, 0.70);
+    visibility: hidden;
+    top: 0;
+    opacity: 0;
+}
+.industry_blog_section:hover .industry_blog_image_section_overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.industry_blog_image_section img{
+    height: 250px;
+    width: 370px;
+}
+.industry_blog_image_media_headings_sections_parts{
+    margin: 25px;
+}
+.industry_blog_image_section_overlay_iconS{
+    margin-top: 118px;
+}
+.industry_blog_image_section_overlay_iconS i{
+    color: #fff;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: #ffca36;
+    padding: 8px;
+}
+.industry_blog_LikeS_icons_news_profile p{
+    font-size: 11px;
+}
+.industry_blog_icons_news_profile p{
+    font-size: 11px;
+}
+.industry_blog_image_reading{
+    margin-top: 20px;
+    
+}
+.industry_blog_image_reading a{
+    margin: 118px;
+    font-size: 13px;
+    transition: all linear 0.5s;
+    text-transform: uppercase;
+    color: #353535;
+    background-color: #ffca36;
+    padding: 9px;
+}
+.industry_blog_image_paragraph{
+    margin-top: 25px;
+}
+.industry_blog_image_paragraph p{Font-Size: 11px;
+    width: 267px;
+    text-align: center;
+    margin: 35px;
+}*/
+/*//BLog Section CSS End*/
+/*BLog() Section CSS Start*/
+.blog_Sections_parts{
+    margin-top: 52px;
+}
+.blog_image_sections{
+    position: relative;
+}
+.blog_image_sections img{
+    height: 220px;
+    width: 314px;
+}
+.industry_blog_image_section_overlay{
+    right: -1px;
+    left: 0;
+    bottom: 0;
+    transition: all linear 0.8s;
+    position: absolute;
+    background-color: rgba(94, 94, 93, 0.70);
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+   
+}
+.blog_image_sections:hover .industry_blog_image_section_overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.industry_blog_image_section_overlay_iconS{
+    margin-top: 99px;
+}
+.industry_blog_image_section_overlay_iconS i{
+    color: #fff;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: #ffca36;
+    padding: 8px;
+}
+.blog_image_written_section{border: 2px solid #eee;Margin: auto;
+    height: 470px;
+    width: 317px;
+}
+.industry_blog_image_headings{
+    margin-top: 17px;
+}
+.industry_blog_image_media_headings_sections_parts{
+    margin-top: 13px;
+}
+.industry_blog_LikeS_icons_news_profile p{font-weight: bold;
+    color: #000;
+    font-size: 9px;
+}
+.industry_blog_icons_news_profile p{font-weight: bold;
+    color: #000;
+    font-size: 9px;
+}
+.industry_parargraph {
+    margin-top: 25px;
+}
+.industry_parargraph p{Font-size:11px;
+   width: 315px;
+   padding: 4px;
+}
+.industry_blog_image_reading{
+    margin-top: 33px;
+}
+.industry_blog_image_reading a{
+    margin: auto;
+    font-size: 13px;
+    transition: all linear 0.5s;
+    text-transform: uppercase;
+    color: #353535;
+    background-color: #ffca36;
+    padding: 9px;
+}
+/*//BLog()Section CSS End*/
+/*Contact Section CSS Start*/
+#contact{
+    margin-top: 52px;
+    background-color: #353535;
+    height: 400px;
+}
+.contact_section_part{
+    margin-top: 72px;
+}
+.contact_paragraph{
+    margin-top: 25px;
+}
+.contact_paragraph p{
+    width: 290px;
+    color: #fff;
+    font-size: 14px;
+}
+.paragraph_contact{
+    margin-top: 11px;
+}
+.paragraph_contact p{
+    width: 290px;
+    color: #fff;
+    font-size: 14px;
+}
+.contact_social_media_section{
+     margin-top: 29px;
+}
+.contact_app{
+    margin-left: 13px;
+}
+.contact_media_app a i{
+    transition: all linear 0.5s;
+    background-color: #fff;
+    color: #353535;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.contact_media_app a:hover i{
+    background-color: #ffca36;
+}
+.contact_us_medium{
+    margin-top: 66px;
+}
+.contact_us_heading h6{
+    color: #fff;
+}
+
+.contact_us_icons_address i{
+    font-size: 25px;
+    color: #353535;
+    background-color: #ffca36;
+    border-radius: 50%;
+    padding: 9px 13px;
+}
+.contact_us_written_address p{
+    font-size: 14px;
+    color: #fff;
+}
+.contact_phone{
+    margin-top: 29px;
+}
+.contact_email{
+    margin-top: 35px;
+}
+.important_Links_headings h6{
+    color: #fff;
+}
+.important_Links_Menu{
+    margin-top: 52px;
+}
+.important_Links_Menu ul li a{
+    transition: all linear 0.5s;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 13px;
+}
+.important_Links_Menu ul li:hover a{
+    color: #ffca36;
+}
+.Latest_news_heading h6{
+    color: #fff;
+}
+.Latest_news_profile_sections {
+    margin-top: 66px;
+}
+.Latest_news_profile_written_sections {
+    margin-top: -5px;
+}
+.Latest_news_profile_paragraph p{
+    font-weight: lighter;
+    font-size: 14px;
+    color: #fff;
+}
+.Latest_news_profile_date_paragraph p{
+    font-weight: lighter;
+    font-size: 14px;
+    color: #fff;
+}
+.Latest_LikeS_icons_news_profile p{
+    color: #fff;
+    font-size: 14px;
+}
+.icons_Latest_news_profile_results_sections_parts{
+    margin-top: 22px;
+}
+.Latest_icons_news_profile p{
+    color: #fff;
+    font-size: 14px;
+}
+.f-eng{
+    margin-top: 33px;
+}
+/*//Contact Section CSS End*/
+/*End Section CSS Start*/
+#end{
+    background-color: #555555;
+}
+.end_content p{
+    font-size: 14px;
+    color: #fff;
+    padding: 15px;
+}
+.end_content span{
+    color: #ffca36;
+}
+/*//End Section CSS End*/
